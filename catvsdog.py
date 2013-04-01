@@ -12,7 +12,7 @@ def max_voters():
 	keep_it=[]
 	for item in set(keep_count.keys()+kick_count.keys()):
 		if keep_count[item] >= kick_count[item]:keep_it.append(item)
-	return max(map(lambda pet: keep_count[pet],keep_it))
+		return max(map(lambda pet: keep_count[pet],keep_it))
 results=[max_voters() for i in range(test_cases)]
 for result in results : print result
 
